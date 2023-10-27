@@ -19,7 +19,7 @@ app.use('/proyecto', proyectoRoutes)
 // });
 
 //levantar el server y escuchar peticiones
-sequelize.sync()
+sequelize.sync(/*{force:true}*/)
     .then(result => {
         app.listen(8080, () => {
             console.log("Servidor escuchando")
