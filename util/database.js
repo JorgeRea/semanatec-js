@@ -8,9 +8,9 @@ const sequelize = new Sequelize('semanatec', 'admin', 'ferrari-95', {
     host:'database-1.cgmblvstxp25.us-east-1.rds.amazonaws.com',
     define: {
         //Evitar que nos ponga createdAt y updateAt
-        timestamps:true,
+        timestamps:false,
         //Pluralizar
-        freezeTableName:false
+        freezeTableName:true
     }
 });
 
